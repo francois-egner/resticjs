@@ -1,0 +1,41 @@
+{
+  "name": "resticjs",
+  "version": "0.1.0",
+  "description": "Library for easy interaction with the restic CLI",
+  "keywords": [
+    "restic",
+    "cli",
+    "backup"
+  ],
+  "homepage": "https://github.com/francois-egner/resticjs#readme",
+  "bugs": {
+    "url": "https://github.com/francois-egner/resticjs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/francois-egner/resticjs.git"
+  },
+  "license": "ISC",
+  "author": "Francois Egner",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
